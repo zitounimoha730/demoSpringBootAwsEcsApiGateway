@@ -1,4 +1,4 @@
-package com.example.demoarchitecturehexagonal.domain.book.commons.entity;
+package com.example.demobooksspringbootapi.domain.book.commons.entity;
 
 import lombok.Builder;
 import lombok.With;
@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Builder
 @With
-public record Book(String id,
+public record Book(Long id,
                    String title,
                    Double price,
                    Boolean active,

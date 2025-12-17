@@ -1,7 +1,7 @@
-package com.example.demoarchitecturehexagonal.domain.book.update.entity;
+package com.example.demobooksspringbootapi.domain.book.update.entity;
 
-import com.example.demoarchitecturehexagonal.domain.book.commons.entity.Book;
-import com.example.demoarchitecturehexagonal.domain.commons.entities.DefaultDomainResponse;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.commons.entities.DefaultDomainResponse;
 import lombok.AccessLevel;
 import lombok.Builder;
 

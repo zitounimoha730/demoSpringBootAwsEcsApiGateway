@@ -1,7 +1,7 @@
-package com.example.demobooksspringbootapi.infrastructure.common.mappers;
+package com.example.demobooksspringbootapi.infrastructure.commons.mappers;
 
-import com.example.demobooksspringbootapi.domain.book.entity.Book;
-import com.example.demobooksspringbootapi.infrastructure.common.entities.BookEntity;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.infrastructure.commons.entities.BookEntity;
 import org.mapstruct.Mapper;
 
 import static org.mapstruct.ReportingPolicy.IGNORE;

@@ -1,6 +1,6 @@
-package com.example.demobooksspringbootapi.application.error;
+package com.example.demobooksspringbootapi.application.errors;
 
-import com.example.demobooksspringbootapi.application.error.exception.FunctionnalErrorException;
+import com.example.demobooksspringbootapi.application.errors.exception.FunctionnalErrorException;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

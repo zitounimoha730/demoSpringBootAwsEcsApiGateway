@@ -1,7 +1,7 @@
-package com.example.demoawsspringboot.domain.book.readall.entity;
+package com.example.demobooksspringbootapi.domain.book.readall.entity;
 
-import com.example.demoawsspringboot.domain.book.entity.Book;
-import com.example.demoawsspringboot.domain.common.entities.DefaultDomainResponse;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.commons.entities.DefaultDomainResponse;
 import lombok.AccessLevel;
 import lombok.Builder;
 

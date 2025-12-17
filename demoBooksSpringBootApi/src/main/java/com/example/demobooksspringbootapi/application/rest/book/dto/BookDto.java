@@ -1,4 +1,20 @@
-package com.example.demoawsspringboot.application.rest.book.dto;
+package com.example.demobooksspringbootapi.application.rest.book.dto;
 
-public record BookDto(String uid, String title, double price) {
-}
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PositiveOrZero;
+import lombok.With;
+
+import java.time.LocalDateTime;
+
+@With
+public record BookDto(@JsonProperty(access = JsonProperty.Access.READ_ONLY)
+                      Long id,
+                      @NotBlank(message = "Title is required!")
+                      String title,
+                      @NotBlank(message = "Title is required!")
+                      @PositiveOrZero(message = "Price can't be negative!")
+                      double price,
+                      boolean active,
+                      LocalDateTime horodateCreation,
+                      LocalDateTime horodateMaj) { }

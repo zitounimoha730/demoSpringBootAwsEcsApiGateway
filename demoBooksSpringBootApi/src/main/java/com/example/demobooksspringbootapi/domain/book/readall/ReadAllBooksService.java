@@ -1,10 +1,10 @@
-package com.example.demoawsspringboot.domain.book.readall;
+package com.example.demobooksspringbootapi.domain.book.readall;
 
-import com.example.demoawsspringboot.domain.book.entity.Book;
-import com.example.demoawsspringboot.domain.book.readall.entity.ReadAllBooksCommand;
-import com.example.demoawsspringboot.domain.book.readall.entity.ReadAllBooksResponse;
-import com.example.demoawsspringboot.domain.book.readall.ports.ReadAllBooksRepository;
-import com.example.demoawsspringboot.domain.book.readall.ports.ReadAllBooksUseCase;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.book.readall.entity.ReadAllBooksCommand;
+import com.example.demobooksspringbootapi.domain.book.readall.entity.ReadAllBooksResponse;
+import com.example.demobooksspringbootapi.domain.book.readall.ports.ReadAllBooksRepository;
+import com.example.demobooksspringbootapi.domain.book.readall.ports.ReadAllBooksUseCase;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

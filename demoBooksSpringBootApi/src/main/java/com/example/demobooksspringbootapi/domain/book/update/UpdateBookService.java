@@ -1,19 +1,19 @@
-package com.example.demoarchitecturehexagonal.domain.book.update;
+package com.example.demobooksspringbootapi.domain.book.update;
 
-import com.example.demoarchitecturehexagonal.domain.book.commons.entity.Book;
-import com.example.demoarchitecturehexagonal.domain.book.update.entity.UpdateBookCommand;
-import com.example.demoarchitecturehexagonal.domain.book.update.entity.UpdateBookHelperModel;
-import com.example.demoarchitecturehexagonal.domain.book.update.entity.UpdateBookResponse;
-import com.example.demoarchitecturehexagonal.domain.book.update.ports.UpdateBookRepository;
-import com.example.demoarchitecturehexagonal.domain.book.update.ports.UpdateBookUseCase;
-import com.example.demoarchitecturehexagonal.domain.commons.errors.DomainException;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.book.update.entity.UpdateBookCommand;
+import com.example.demobooksspringbootapi.domain.book.update.entity.UpdateBookHelperModel;
+import com.example.demobooksspringbootapi.domain.book.update.entity.UpdateBookResponse;
+import com.example.demobooksspringbootapi.domain.book.update.ports.UpdateBookRepository;
+import com.example.demobooksspringbootapi.domain.book.update.ports.UpdateBookUseCase;
+import com.example.demobooksspringbootapi.domain.commons.errors.DomainException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
-import static com.example.demoarchitecturehexagonal.domain.book.commons.constants.BookConstants.EXPENSIVE_BOOKS_PRICE;
-import static com.example.demoarchitecturehexagonal.domain.book.commons.constants.BookConstants.INVALID_BOOK_PRICE_ERROR_MESSAGE;
+import static com.example.demobooksspringbootapi.domain.book.commons.constants.BookConstants.EXPENSIVE_BOOKS_PRICE;
+import static com.example.demobooksspringbootapi.domain.book.commons.constants.BookConstants.INVALID_BOOK_PRICE_ERROR_MESSAGE;
 
 @Service
 @AllArgsConstructor
@@ -37,7 +37,7 @@ public class UpdateBookService implements UpdateBookUseCase {
                 .map(model -> new UpdateBookHelper(model).updatedBook());
     }
 
-    private Mono<Book> retrieveExistingBook(String id) {
+    private Mono<Book> retrieveExistingBook(Long id) {
         return this.repository.findById(id)
                 .doOnError(th -> log.atWarn().log("Error while finding existing book id: %s".formatted(id), th));
     }

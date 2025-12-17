@@ -1,7 +1,7 @@
-package com.example.demoawsspringboot.domain.book.create.entity;
+package com.example.demobooksspringbootapi.domain.book.create.entity;
 
-import com.example.demoawsspringboot.domain.book.entity.Book;
-import com.example.demoawsspringboot.domain.common.entities.DefaultDomainCommand;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.commons.entities.DefaultDomainCommand;
 
 public record CreateBookCommand(Book book) implements DefaultDomainCommand<Book> {
     @Override

@@ -1,9 +1,9 @@
-package com.example.demoawsspringboot.infrastructure.book;
+package com.example.demobooksspringbootapi.infrastructure.book;
 
-import com.example.demoawsspringboot.domain.book.create.ports.CreateBookRepository;
-import com.example.demoawsspringboot.domain.book.entity.Book;
-import com.example.demoawsspringboot.infrastructure.common.mappers.BookEntityMapper;
-import com.example.demoawsspringboot.infrastructure.common.repositories.BookRepository;
+import com.example.demobooksspringbootapi.domain.book.create.ports.CreateBookRepository;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.infrastructure.commons.mappers.BookEntityMapper;
+import com.example.demobooksspringbootapi.infrastructure.commons.repositories.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.jmolecules.architecture.hexagonal.SecondaryAdapter;
 import org.mapstruct.factory.Mappers;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
-import static com.example.demoawsspringboot.domain.common.utils.ReactiveUtils.MAP_INFRA_EXCEPTION;
+import static com.example.demobooksspringbootapi.domain.commons.utils.ReactiveUtils.MAP_INFRA_EXCEPTION;
 
 @RequiredArgsConstructor
 @SecondaryAdapter
@@ -22,7 +22,7 @@ public class CreateBookH2Adapter implements CreateBookRepository {
 
 
     @Override
-    public Mono<Book> save(Book book) {
+    public Mono<Book> create(Book book) {
         return Mono.fromCallable(() -> repository.save(mapper.toEntity(book)))
                 .subscribeOn(Schedulers.boundedElastic())
                 .map(mapper::toDomain)

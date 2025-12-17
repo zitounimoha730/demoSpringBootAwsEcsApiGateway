@@ -1,9 +1,9 @@
-package com.example.demoawsspringboot.infrastructure.book;
+package com.example.demobooksspringbootapi.infrastructure.book;
 
-import com.example.demoawsspringboot.domain.book.entity.Book;
-import com.example.demoawsspringboot.domain.book.readall.ports.ReadAllBooksRepository;
-import com.example.demoawsspringboot.infrastructure.common.mappers.BookEntityMapper;
-import com.example.demoawsspringboot.infrastructure.common.repositories.BookRepository;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.book.readall.ports.ReadAllBooksRepository;
+import com.example.demobooksspringbootapi.infrastructure.commons.mappers.BookEntityMapper;
+import com.example.demobooksspringbootapi.infrastructure.commons.repositories.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.jmolecules.architecture.hexagonal.SecondaryAdapter;
 import org.mapstruct.factory.Mappers;
@@ -14,7 +14,7 @@ import reactor.core.scheduler.Schedulers;
 
 import java.util.List;
 
-import static com.example.demoawsspringboot.domain.common.utils.ReactiveUtils.MAP_INFRA_EXCEPTION;
+import static com.example.demobooksspringbootapi.domain.commons.utils.ReactiveUtils.MAP_INFRA_EXCEPTION;
 
 @RequiredArgsConstructor
 @SecondaryAdapter

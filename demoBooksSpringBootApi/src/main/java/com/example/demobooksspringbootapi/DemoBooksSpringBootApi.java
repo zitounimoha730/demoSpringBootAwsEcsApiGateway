@@ -1,11 +1,11 @@
-package com.example.demoawsspringboot;
+package com.example.demobooksspringbootapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Demoawsspringboot {
+public class DemoBooksSpringBootApi {
 	public static void main(String[] args) {
-		SpringApplication.run(Demoawsspringboot.class, args);
+		SpringApplication.run(DemoBooksSpringBootApi.class, args);
 	}
 }

@@ -1,7 +1,7 @@
-package com.example.demoawsspringboot.infrastructure;
+package com.example.demobooksspringbootapi.infrastructure;
 
-import com.example.demoawsspringboot.infrastructure.common.entities.BookEntity;
-import com.example.demoawsspringboot.infrastructure.common.repositories.BookRepository;
+import com.example.demobooksspringbootapi.infrastructure.commons.entities.BookEntity;
+import com.example.demobooksspringbootapi.infrastructure.commons.repositories.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

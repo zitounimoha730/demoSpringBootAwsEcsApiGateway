@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.domain.common.errors;
+package com.example.demobooksspringbootapi.domain.commons.errors;
 
 public class InfrastructureException extends RuntimeException {
 

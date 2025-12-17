@@ -1,7 +1,7 @@
-package com.example.demoarchitecturehexagonal.domain.book.create;
+package com.example.demobooksspringbootapi.domain.book.create;
 
-import com.example.demoarchitecturehexagonal.domain.book.commons.entity.Book;
-import com.example.demoarchitecturehexagonal.domain.book.create.entity.CreateBookHelperModel;
+import com.example.demobooksspringbootapi.domain.book.create.entity.CreateBookHelperModel;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDateTime;

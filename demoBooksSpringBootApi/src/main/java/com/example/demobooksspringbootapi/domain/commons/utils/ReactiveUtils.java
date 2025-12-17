@@ -1,6 +1,6 @@
-package com.example.demobooksspringbootapi.domain.common.utils;
+package com.example.demobooksspringbootapi.domain.commons.utils;
 
-import com.example.demobooksspringbootapi.domain.common.errors.InfrastructureException;
+import com.example.demobooksspringbootapi.domain.commons.errors.InfrastructureException;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 

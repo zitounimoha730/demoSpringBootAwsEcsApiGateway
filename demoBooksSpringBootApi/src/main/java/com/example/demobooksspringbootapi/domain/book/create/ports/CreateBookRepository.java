@@ -1,10 +1,10 @@
-package com.example.demoawsspringboot.domain.book.create.ports;
+package com.example.demobooksspringbootapi.domain.book.create.ports;
 
-import com.example.demoawsspringboot.domain.book.entity.Book;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
 import org.jmolecules.architecture.hexagonal.SecondaryPort;
 import reactor.core.publisher.Mono;
 
 @SecondaryPort
 public interface CreateBookRepository {
-    Mono<Book> save(Book book);
+    Mono<Book> create(Book book);
 }

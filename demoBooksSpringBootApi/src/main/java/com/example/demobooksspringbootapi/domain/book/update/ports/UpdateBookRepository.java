@@ -1,11 +1,11 @@
-package com.example.demoarchitecturehexagonal.domain.book.update.ports;
+package com.example.demobooksspringbootapi.domain.book.update.ports;
 
-import com.example.demoarchitecturehexagonal.domain.book.commons.entity.Book;
+import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
 import org.jmolecules.architecture.hexagonal.SecondaryPort;
 import reactor.core.publisher.Mono;
 
 @SecondaryPort
 public interface UpdateBookRepository {
-    Mono<Book> findById(String id);
+    Mono<Book> findById(Long id);
     Mono<Book> save(Book book);
 }

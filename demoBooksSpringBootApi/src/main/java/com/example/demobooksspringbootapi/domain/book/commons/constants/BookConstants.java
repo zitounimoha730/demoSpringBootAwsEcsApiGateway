@@ -1,4 +1,4 @@
-package com.example.demoarchitecturehexagonal.domain.book.commons.constants;
+package com.example.demobooksspringbootapi.domain.book.commons.constants;
 
 public final class BookConstants {
     public static final String EXPENSIVE_BOOKS_PREFIX = "EXPENSIVE";

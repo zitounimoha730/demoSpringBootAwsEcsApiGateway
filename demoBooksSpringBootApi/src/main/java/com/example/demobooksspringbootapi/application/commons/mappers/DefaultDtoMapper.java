@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.application.common.mapper;
+package com.example.demobooksspringbootapi.application.commons.mappers;
 
 import java.util.List;
 

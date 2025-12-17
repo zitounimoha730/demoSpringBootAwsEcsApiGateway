@@ -1,4 +1,4 @@
-package com.example.demoawsspringboot.domain.book.readall.entity;
+package com.example.demobooksspringbootapi.domain.book.readall.entity;
 
 public record ReadAllBooksCommand() {
 }

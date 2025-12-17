@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.domain.common.errors;
+package com.example.demobooksspringbootapi.domain.commons.errors;
 
 import lombok.NoArgsConstructor;
 

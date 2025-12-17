@@ -1,8 +1,8 @@
-package com.example.demoarchitecturehexagonal.domain.book.update.ports;
+package com.example.demobooksspringbootapi.domain.book.update.ports;
 
-import com.example.demoarchitecturehexagonal.domain.book.update.entity.UpdateBookCommand;
-import com.example.demoarchitecturehexagonal.domain.book.update.entity.UpdateBookResponse;
-import com.example.demoarchitecturehexagonal.domain.commons.entities.DefaultDomainService;
+import com.example.demobooksspringbootapi.domain.book.update.entity.UpdateBookCommand;
+import com.example.demobooksspringbootapi.domain.book.update.entity.UpdateBookResponse;
+import com.example.demobooksspringbootapi.domain.commons.entities.DefaultDomainService;
 import org.jmolecules.architecture.hexagonal.PrimaryPort;
 
 @PrimaryPort

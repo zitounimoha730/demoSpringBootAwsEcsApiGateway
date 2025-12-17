@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.domain.common.entities;
+package com.example.demobooksspringbootapi.domain.commons.entities;
 
 import org.apache.commons.lang3.StringUtils;
 

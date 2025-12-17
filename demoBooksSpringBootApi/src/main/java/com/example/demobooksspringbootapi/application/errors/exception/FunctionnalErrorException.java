@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.application.error.exception;
+package com.example.demobooksspringbootapi.application.errors.exception;
 
 public class FunctionnalErrorException extends RuntimeException {
 

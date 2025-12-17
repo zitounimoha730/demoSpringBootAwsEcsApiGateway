@@ -1,4 +1,4 @@
-package com.example.demobooksspringbootapi.domain.common.entities;
+package com.example.demobooksspringbootapi.domain.commons.entities;
 
 public interface DefaultDomainCommand<U> {
     U get();
