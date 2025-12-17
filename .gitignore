@@ -1,0 +1,18 @@
+demoBooksSpringBootApi/HELP.md
+demoBooksSpringBootApi/.gradle
+demoBooksSpringBootApi/build/
+!gradle/wrapper/gradle-wrapper.jar
+demoBooksSpringBootApi/!**/src/main/**/build/
+demoBooksSpringBootApi/!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+demoBooksSpringBootApi/.idea
+demoBooksSpringBootApi/*.iws
+demoBooksSpringBootApi/*.iml
+demoBooksSpringBootApi/*.ipr
+demoBooksSpringBootApi/out/
+!demoBooksSpringBootApi/**/src/main/**/out/
+!demoBooksSpringBootApi/**/src/test/**/out/
+
+### VS Code ###
+.vscode/
