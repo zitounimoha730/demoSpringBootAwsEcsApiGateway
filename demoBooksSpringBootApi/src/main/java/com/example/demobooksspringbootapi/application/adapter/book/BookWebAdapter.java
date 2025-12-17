@@ -36,7 +36,7 @@ public class BookWebAdapter implements BookAdapter {
     }
 
     @Override
-    public Mono<List<BookDto>> readAllBooks(BookDto bookDto) {
+    public Mono<List<BookDto>> readAllBooks() {
         return readAllBooksUseCase.process(new ReadAllBooksCommand())
                 .flatMap(this::buildReadAllResponse);
     }
