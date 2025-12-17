@@ -2,6 +2,7 @@ package com.example.demobooksspringbootapi.infrastructure.book;
 
 import com.example.demobooksspringbootapi.domain.book.commons.entity.Book;
 import com.example.demobooksspringbootapi.domain.book.update.ports.UpdateBookRepository;
+import com.example.demobooksspringbootapi.domain.commons.errors.InfrastructureException;
 import com.example.demobooksspringbootapi.infrastructure.commons.mappers.BookEntityMapper;
 import com.example.demobooksspringbootapi.infrastructure.commons.repositories.BookRepository;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +11,8 @@ import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
+
+import java.util.Optional;
 
 import static com.example.demobooksspringbootapi.domain.commons.utils.ReactiveUtils.MAP_INFRA_EXCEPTION;
 
@@ -33,6 +36,8 @@ public class UpdateBookH2Adapter implements UpdateBookRepository {
     public Mono<Book> findById(Long id) {
         return Mono.fromCallable(() -> repository.findById(id))
                 .subscribeOn(Schedulers.boundedElastic())
+                .switchIfEmpty(Mono.defer(() -> Mono.error(new InfrastructureException("book not found"))))
+                .map(Optional::get)
                 .map(mapper::toDomain)
                 .onErrorMap(MAP_INFRA_EXCEPTION);
     }

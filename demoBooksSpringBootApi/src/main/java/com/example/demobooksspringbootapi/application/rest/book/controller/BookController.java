@@ -30,8 +30,8 @@ public class BookController {
     }
 
     @GetMapping
-    public Mono<ResponseEntity<List<BookDto>>> readAllBooks(BookDto criteria) {
-        return adapter.readAllBooks(criteria).map(ResponseEntity::ok);
+    public Mono<ResponseEntity<List<BookDto>>> readAllBooks() {
+        return adapter.readAllBooks().map(ResponseEntity::ok);
     }
 
     @PutMapping("/{id}")

@@ -37,7 +37,7 @@ public class BookWebAdapter implements BookAdapter {
 
     @Override
     public Mono<List<BookDto>> readAllBooks(BookDto bookDto) {
-        return readAllBooksUseCase.process(new ReadAllBooksCommand(mapper.toDomainEntity(bookDto)))
+        return readAllBooksUseCase.process(new ReadAllBooksCommand())
                 .flatMap(this::buildReadAllResponse);
     }
 

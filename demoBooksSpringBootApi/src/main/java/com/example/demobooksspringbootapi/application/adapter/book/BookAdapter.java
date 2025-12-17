@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface BookAdapter {
     Mono<BookDto> createBook(BookDto bookDto);
-    Mono<List<BookDto>> readAllBooks(BookDto bookDto);
+    Mono<List<BookDto>> readAllBooks();
     Mono<BookDto> updateBook(BookDto bookDto);
 }
