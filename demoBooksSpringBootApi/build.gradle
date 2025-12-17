@@ -35,18 +35,18 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	annotationProcessor 'org.projectlombok:lombok'
-	implementation "org.mapstruct:mapstruct:${mapstruct_version}"
-	annotationProcessor "org.mapstruct:mapstruct-processor:${mapstruct_version}"
+	implementation "org.mapstruct:mapstruct:1.6.3"
+	annotationProcessor "org.mapstruct:mapstruct-processor:1.6.3"
 	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-	implementation "org.jmolecules:jmolecules-hexagonal-architecture:${jmolecules_version}"
-	implementation "org.apache.commons:commons-lang3:${apache_lang3_version}"
-	implementation "org.apache.commons:commons-collections4:${apache_commons_version}"
+	implementation "org.jmolecules:jmolecules-hexagonal-architecture:1.10.0"
+	implementation "org.apache.commons:commons-lang3:3.14.0"
+	implementation "org.apache.commons:commons-collections4:4.5.0"
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-	testImplementation "org.jmolecules.integrations:jmolecules-archunit:${jmolecules_archunit_version}"
-	testImplementation "com.tngtech.archunit:archunit-junit5:${archunit_api_version}"
+	testImplementation "org.jmolecules.integrations:jmolecules-archunit:0.32.0"
+	testImplementation "com.tngtech.archunit:archunit-junit5:1.4.1"
 }
 
 tasks.named('test') {
